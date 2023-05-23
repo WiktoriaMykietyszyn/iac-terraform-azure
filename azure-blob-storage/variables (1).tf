@@ -1,54 +1,59 @@
 variable "resource_group_name" {
-  description = "Nazwa grupy zasobów"
+  description = "ResourceGroupName"
   type        = string
-  default     = "my-group"
+  default     = "ExampleResorce"
 }
 
 variable "resource_group_location" {
-  description = "Lokalizacja zasobów"
+  description = "ResorecLoc"
   type        = string
   default     = "West Europe"
 }
 
 variable "storage_account_name" {
-  description = "Nazwa konta magazynu"
+  description = "StorageNameAccount"
   type        = string
-  default     = "my-account"
+  default     = "StorageName"
 }
 
 variable "storage_account_tier" {
-  description = "Tier konta"
+  description = "TierOfAccount"
   type        = string
   default     = "Standard"
 }
 
 variable "storage_account_replication" {
-  description = "Replication konta magazynu"
+  description = "ReplicationOfAccount"
   type        = string
-  default     = "GRS"
+  default     = "LRS"
 }
 
 variable "container_name" {
   type    = string
-  default = "my-container"
+  default = "NewContainer"
 }
 
 variable "container_access_type" {
   type    = string
-  default = "private"
+  default = "public"
 }
 
 variable "blob_name" {
   type    = string
-  default = "my-blob"
+  default = "MyNewFile.txt"
 }
 
 variable "blob_type" {
   type    = string
-  default = "Block"
+  default = "Append"
 }
 
 variable "blob_path" {
   type    = string
-  default = "/home/viktoriia/terraform-proj/file0.txt"
+  default = "/home/Wiktoria/NewApplicationProject/file.txt"
 }
+variable "blob_acces_tier"{
+	type = string
+	deafult = "cool"
+}
+

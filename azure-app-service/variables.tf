@@ -1,11 +1,11 @@
 variable "resource_group_name" {
-  description = "Nazwa grupy zasobów"
+  description = "NameOfResources"
   type        = string
   default     = "my-group"
 }
 
 variable "resource_group_location" {
-  description = "Lokalizacja zasobów"
+  description = "ResorcesLoc"
   type        = string
   default     = "West Europe"
 }
@@ -17,12 +17,13 @@ variable "app_service_plan_name" {
 }
 
 variable "app_service_plan_sku_tier" {
-  description = "SKU Tier"
+  description = "ServicePlanTier"
   type        = string
   default     = "Standard"
 }
 
 variable "app_service_plan_sku_size" {
+  descryption = "ServicePlanSize"
   type    = string
   default = "S1"
 }
@@ -32,6 +33,20 @@ variable "azurerm_linux_web_app_name" {
   default = "my-app"
 }
 
+variable "java_version"{
+	type = string
+	defalut = "11"
+}
+
+
+variable "java_container"{
+	type = string
+	defalut = "TOMCAT"
+}
+variable "java_container_version"{
+	type = string
+	defalut = "9.0"
+}
 variable "https_only" {
   type = bool
   default = true
@@ -47,17 +62,15 @@ variable "use_mercurial" {
   default = false
 }
 
-variable "tls_ver" {
-  type = string
-  default = "1.2"
-}
 
-variable "webapp_repo_url" {
+
+variable "NewApp_repo_url" {
   type = string
-  default = "https://github.com/Azure-Samples/nodejs-docs-hello-world"
+  default = "https://github.com/Azure-Samples/java-docs-hello-world"
 }
 
 variable "webapp_repo_branch" {
+
   type = string
   default = "master"
 }

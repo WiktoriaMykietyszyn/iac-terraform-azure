@@ -1,41 +1,41 @@
 variable "resource_group_name" {
-  description = "Nazwa grupy zasobów"
+  description = "ResorceGroupName"
   type        = string
   default     = "my-group"
 }
 
 variable "resource_group_location" {
-  description = "Lokalizacja zasobów"
+  description = "localization"
   type        = string
   default     = "West Europe"
 }
 
 variable "storage_account_name" {
-  description = "Nazwa konta magazynu"
+  description = "NameOfStorageAccount"
   type        = string
   default     = "my-account"
 }
 
 variable "storage_account_tier" {
-  description = "Tier konta"
+  description = "AccountTier"
   type        = string
   default     = "Standard"
 }
 
 variable "storage_account_replication" {
-  description = "Replication konta magazynu"
+  description = "ReplicationAccount"
   type        = string
-  default     = "GRS"
+  default     = "LRS"
 }
 
 variable "app_service_plan_name" {
-  description = "Nazwa planu usługi aplikacji"
+  description = "AplicatonPlan"
   type        = string
-  default     = "my-plan"
+  default     = "Plan"
 }
 
 variable "app_service_plan_sku_tier" {
-  description = "SKU Tier"
+  description = "ServicePlanTier"
   type        = string
   default     = "Standard"
 }
@@ -46,22 +46,22 @@ variable "app_service_plan_sku_size" {
 }
 
 variable "function_app_name" {
-  description = "Nazwa aplikacji funkcji"
+  description = "NameOfFunction"
   type        = string
   default     = "my-app-function"
 }
 
-# ============================
+
 
 variable "python_version" {
-    description = "Wersja pythona"
+    description = "PythonVer"
     type        = string
     default     = "3.10"
 }
 
 variable "function_name" {
   type    = string
-  default = "my-function"
+  default = "AppFunction"
 }
 
 variable "language" {
