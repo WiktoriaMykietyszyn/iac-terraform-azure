@@ -66,11 +66,11 @@ variable "use_mercurial"{
 } 
 variable "branch"{
 	type = "string"
-	defalut = "https://github.com/kwasio93/iac-terraform-azure"
+	defalut = "master"
 }
 variable "repo_url"{
 	type = "string"
-	defalut = "master"
+	defalut = "https://github.com/WiktoriaMykietyszyn/iac-terraform-azure/blob/main/azure-app-service/varibles.tf"
 }
 
 
